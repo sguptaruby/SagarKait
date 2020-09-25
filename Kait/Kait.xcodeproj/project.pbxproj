@@ -1,0 +1,986 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18024571249B42E200E2CAC5 /* SocketChatModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18024570249B42E200E2CAC5 /* SocketChatModal.swift */; };
+		180C1A5E243506260062E777 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C1A5C243506260062E777 /* Constants.swift */; };
+		180C1A5F243506260062E777 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C1A5D243506260062E777 /* Helpers.swift */; };
+		180C1A6124350DD00062E777 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C1A6024350DD00062E777 /* StringExtension.swift */; };
+		18119CF024FCC63F001F5511 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119CEF24FCC63F001F5511 /* IntroViewController.swift */; };
+		18119CF224FCCADA001F5511 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119CF124FCCADA001F5511 /* RoundedImageView.swift */; };
+		18119CF824FD477E001F5511 /* kaitintro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 18119CF724FD477E001F5511 /* kaitintro.mp4 */; };
+		18119CFA24FD575F001F5511 /* CustomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119CF924FD575F001F5511 /* CustomeView.swift */; };
+		1863EE222456E4190025A359 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863EE212456E4190025A359 /* DateExtension.swift */; };
+		186550CB24FE209D00F58AA5 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186550CA24FE209D00F58AA5 /* TabBarViewController.swift */; };
+		186C020024FCC302009CF699 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186C01FF24FCC302009CF699 /* UIColor+Extension.swift */; };
+		187EA84524ED472F005A9277 /* WebChatUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187EA84424ED472F005A9277 /* WebChatUsers.swift */; };
+		187FB6EA2452F46900421479 /* ChatViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FB6E92452F46900421479 /* ChatViewModal.swift */; };
+		187FB6EC2453265500421479 /* ChatHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187FB6EB2453265500421479 /* ChatHistory.swift */; };
+		18A8EADD244A174200E01B2C /* FriendList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A8EADC244A174100E01B2C /* FriendList.swift */; };
+		18B0747F2501FE390054A5E9 /* kaitintro.mov in Resources */ = {isa = PBXBuildFile; fileRef = 18B0747E2501FE390054A5E9 /* kaitintro.mov */; };
+		18C70D86242D1BA0002A2A4B /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C70D85242D1BA0002A2A4B /* ChatViewController.swift */; };
+		18C70D89242D1BC7002A2A4B /* SenderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C70D87242D1BC7002A2A4B /* SenderTableViewCell.swift */; };
+		18C70D8A242D1BC7002A2A4B /* SenderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C70D88242D1BC7002A2A4B /* SenderTableViewCell.xib */; };
+		18C70D8D242D1BDD002A2A4B /* ReciverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C70D8B242D1BDD002A2A4B /* ReciverTableViewCell.swift */; };
+		18C70D8E242D1BDD002A2A4B /* ReciverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C70D8C242D1BDD002A2A4B /* ReciverTableViewCell.xib */; };
+		18CD65AF242BBF63006D625D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CD65AE242BBF63006D625D /* AppDelegate.swift */; };
+		18CD65B3242BBF63006D625D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CD65B2242BBF63006D625D /* ViewController.swift */; };
+		18CD65B6242BBF63006D625D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CD65B4242BBF63006D625D /* Main.storyboard */; };
+		18CD65B9242BBF64006D625D /* Kait.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18CD65B7242BBF64006D625D /* Kait.xcdatamodeld */; };
+		18CD65BB242BBF67006D625D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CD65BA242BBF67006D625D /* Assets.xcassets */; };
+		18CD65BE242BBF67006D625D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CD65BC242BBF67006D625D /* LaunchScreen.storyboard */; };
+		18CD65C9242BBF68006D625D /* KaitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CD65C8242BBF68006D625D /* KaitTests.swift */; };
+		18CD65D4242BBF68006D625D /* KaitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CD65D3242BBF68006D625D /* KaitUITests.swift */; };
+		18CD65E3242BC091006D625D /* FriendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CD65E2242BC091006D625D /* FriendListViewController.swift */; };
+		18CD65E6242BC1BE006D625D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CD65E5242BC1BE006D625D /* LoginViewController.swift */; };
+		18CD65ED242BC65D006D625D /* ControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CD65EC242BC65D006D625D /* ControllerExtension.swift */; };
+		18CD65F0242BD512006D625D /* FriendListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CD65EE242BD512006D625D /* FriendListTableViewCell.swift */; };
+		18CD65F1242BD512006D625D /* FriendListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD65EF242BD512006D625D /* FriendListTableViewCell.xib */; };
+		18CE325D2434FD360001DD23 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE325A2434FD360001DD23 /* API.swift */; };
+		18CE325E2434FD360001DD23 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE325B2434FD360001DD23 /* APIController.swift */; };
+		18CE325F2434FD360001DD23 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE325C2434FD360001DD23 /* APIError.swift */; };
+		18CFF78E2444CE870074B579 /* FriendListViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CFF78D2444CE870074B579 /* FriendListViewModal.swift */; };
+		18D67CBB243E3FD300545B98 /* LoginViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D67CBA243E3FD300545B98 /* LoginViewModal.swift */; };
+		18D67CBD243E44E000545B98 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D67CBC243E44E000545B98 /* ViewExtension.swift */; };
+		18D67CBF243E4AA700545B98 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D67CBE243E4AA700545B98 /* User.swift */; };
+		18D67CC1243E4AB100545B98 /* JSONUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D67CC0243E4AB100545B98 /* JSONUtilities.swift */; };
+		18D67CC3243E4AE600545B98 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D67CC2243E4AE600545B98 /* AppManager.swift */; };
+		5693A0C329031DA3AD67EEA5 /* Pods_Kait.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57421F7C2FB59032B951F59 /* Pods_Kait.framework */; };
+		C1E642AED1F86E6D8D8ACF45 /* Pods_KaitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4EE9B8A3E83F5CA6724E8D /* Pods_KaitUITests.framework */; };
+		DABF53D7D863DAFDA17A8ADA /* Pods_KaitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A072F4FF96FC39E2D4A63D /* Pods_KaitTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18CD65C5242BBF68006D625D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18CD65A3242BBF63006D625D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18CD65AA242BBF63006D625D;
+			remoteInfo = Kait;
+		};
+		18CD65D0242BBF68006D625D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18CD65A3242BBF63006D625D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18CD65AA242BBF63006D625D;
+			remoteInfo = Kait;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F30E1479804CF25E47335EF /* Pods-Kait.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kait.debug.xcconfig"; path = "Target Support Files/Pods-Kait/Pods-Kait.debug.xcconfig"; sourceTree = "<group>"; };
+		166B8088B7CC49B51F47ECF0 /* Pods-Kait.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kait.release.xcconfig"; path = "Target Support Files/Pods-Kait/Pods-Kait.release.xcconfig"; sourceTree = "<group>"; };
+		18024570249B42E200E2CAC5 /* SocketChatModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketChatModal.swift; sourceTree = "<group>"; };
+		180C1A5C243506260062E777 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		180C1A5D243506260062E777 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		180C1A6024350DD00062E777 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		18119CEF24FCC63F001F5511 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		18119CF124FCCADA001F5511 /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
+		18119CF724FD477E001F5511 /* kaitintro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = kaitintro.mp4; sourceTree = "<group>"; };
+		18119CF924FD575F001F5511 /* CustomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeView.swift; sourceTree = "<group>"; };
+		1863EE212456E4190025A359 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		186550CA24FE209D00F58AA5 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		186C01FF24FCC302009CF699 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		187EA84424ED472F005A9277 /* WebChatUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebChatUsers.swift; sourceTree = "<group>"; };
+		187FB6E92452F46900421479 /* ChatViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModal.swift; sourceTree = "<group>"; };
+		187FB6EB2453265500421479 /* ChatHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatHistory.swift; sourceTree = "<group>"; };
+		18A8EADC244A174100E01B2C /* FriendList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendList.swift; sourceTree = "<group>"; };
+		18B0747E2501FE390054A5E9 /* kaitintro.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = kaitintro.mov; sourceTree = "<group>"; };
+		18C70D85242D1BA0002A2A4B /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		18C70D87242D1BC7002A2A4B /* SenderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderTableViewCell.swift; sourceTree = "<group>"; };
+		18C70D88242D1BC7002A2A4B /* SenderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SenderTableViewCell.xib; sourceTree = "<group>"; };
+		18C70D8B242D1BDD002A2A4B /* ReciverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReciverTableViewCell.swift; sourceTree = "<group>"; };
+		18C70D8C242D1BDD002A2A4B /* ReciverTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReciverTableViewCell.xib; sourceTree = "<group>"; };
+		18CCBDE224DC35A800527957 /* KAIT.AI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KAIT.AI.entitlements; sourceTree = "<group>"; };
+		18CD65AB242BBF63006D625D /* KAIT.AI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KAIT.AI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18CD65AE242BBF63006D625D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18CD65B2242BBF63006D625D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18CD65B5242BBF63006D625D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18CD65B8242BBF64006D625D /* Kait.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Kait.xcdatamodel; sourceTree = "<group>"; };
+		18CD65BA242BBF67006D625D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18CD65BD242BBF67006D625D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18CD65BF242BBF67006D625D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18CD65C4242BBF68006D625D /* KaitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18CD65C8242BBF68006D625D /* KaitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaitTests.swift; sourceTree = "<group>"; };
+		18CD65CA242BBF68006D625D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18CD65CF242BBF68006D625D /* KaitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18CD65D3242BBF68006D625D /* KaitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaitUITests.swift; sourceTree = "<group>"; };
+		18CD65D5242BBF68006D625D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18CD65E2242BC091006D625D /* FriendListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListViewController.swift; sourceTree = "<group>"; };
+		18CD65E5242BC1BE006D625D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		18CD65EC242BC65D006D625D /* ControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerExtension.swift; sourceTree = "<group>"; };
+		18CD65EE242BD512006D625D /* FriendListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListTableViewCell.swift; sourceTree = "<group>"; };
+		18CD65EF242BD512006D625D /* FriendListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendListTableViewCell.xib; sourceTree = "<group>"; };
+		18CE325A2434FD360001DD23 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		18CE325B2434FD360001DD23 /* APIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
+		18CE325C2434FD360001DD23 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		18CFF78D2444CE870074B579 /* FriendListViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListViewModal.swift; sourceTree = "<group>"; };
+		18D67CBA243E3FD300545B98 /* LoginViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModal.swift; sourceTree = "<group>"; };
+		18D67CBC243E44E000545B98 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		18D67CBE243E4AA700545B98 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		18D67CC0243E4AB100545B98 /* JSONUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONUtilities.swift; sourceTree = "<group>"; };
+		18D67CC2243E4AE600545B98 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		4A4EE9B8A3E83F5CA6724E8D /* Pods_KaitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KaitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5149A8068079D9B97651EA27 /* Pods-KaitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaitTests.debug.xcconfig"; path = "Target Support Files/Pods-KaitTests/Pods-KaitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		51B3C715C09720C060EC0ACA /* Pods-KaitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaitUITests.release.xcconfig"; path = "Target Support Files/Pods-KaitUITests/Pods-KaitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		87A072F4FF96FC39E2D4A63D /* Pods_KaitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KaitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1F4E9A8569AD7612B91887F /* Pods-KaitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaitTests.release.xcconfig"; path = "Target Support Files/Pods-KaitTests/Pods-KaitTests.release.xcconfig"; sourceTree = "<group>"; };
+		C8DE3037C0CA1DB6E0E0675A /* Pods-KaitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaitUITests.debug.xcconfig"; path = "Target Support Files/Pods-KaitUITests/Pods-KaitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F57421F7C2FB59032B951F59 /* Pods_Kait.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kait.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18CD65A8242BBF63006D625D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5693A0C329031DA3AD67EEA5 /* Pods_Kait.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CD65C1242BBF68006D625D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABF53D7D863DAFDA17A8ADA /* Pods_KaitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CD65CC242BBF68006D625D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1E642AED1F86E6D8D8ACF45 /* Pods_KaitUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18119CEE24FCC605001F5511 /* LaunchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18119CEF24FCC63F001F5511 /* IntroViewController.swift */,
+			);
+			path = LaunchViewController;
+			sourceTree = "<group>";
+		};
+		186550C924FE207300F58AA5 /* TabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				186550CA24FE209D00F58AA5 /* TabBarViewController.swift */,
+			);
+			path = TabbarController;
+			sourceTree = "<group>";
+		};
+		18C70D83242CED8A002A2A4B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				18CE325A2434FD360001DD23 /* API.swift */,
+				18CE325B2434FD360001DD23 /* APIController.swift */,
+				18CE325C2434FD360001DD23 /* APIError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		18C70D84242D1909002A2A4B /* ChatViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18C70D85242D1BA0002A2A4B /* ChatViewController.swift */,
+				18C70D87242D1BC7002A2A4B /* SenderTableViewCell.swift */,
+				18C70D88242D1BC7002A2A4B /* SenderTableViewCell.xib */,
+				18C70D8B242D1BDD002A2A4B /* ReciverTableViewCell.swift */,
+				18C70D8C242D1BDD002A2A4B /* ReciverTableViewCell.xib */,
+			);
+			path = ChatViewController;
+			sourceTree = "<group>";
+		};
+		18CD65A2242BBF63006D625D = {
+			isa = PBXGroup;
+			children = (
+				18CD65AD242BBF63006D625D /* Kait */,
+				18CD65C7242BBF68006D625D /* KaitTests */,
+				18CD65D2242BBF68006D625D /* KaitUITests */,
+				18CD65AC242BBF63006D625D /* Products */,
+				854873A5AFB066F8334C845C /* Pods */,
+				8A5FB2970F48E3D78044773B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18CD65AC242BBF63006D625D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18CD65AB242BBF63006D625D /* KAIT.AI.app */,
+				18CD65C4242BBF68006D625D /* KaitTests.xctest */,
+				18CD65CF242BBF68006D625D /* KaitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18CD65AD242BBF63006D625D /* Kait */ = {
+			isa = PBXGroup;
+			children = (
+				18B0747E2501FE390054A5E9 /* kaitintro.mov */,
+				18119CF724FD477E001F5511 /* kaitintro.mp4 */,
+				18CCBDE224DC35A800527957 /* KAIT.AI.entitlements */,
+				18C70D83242CED8A002A2A4B /* Networking */,
+				18CD65EA242BC2AD006D625D /* Helper */,
+				18CD65E9242BC298006D625D /* Modal */,
+				18CD65E8242BC27E006D625D /* ViewModal */,
+				18CD65E7242BC269006D625D /* ViewController */,
+				18CD65AE242BBF63006D625D /* AppDelegate.swift */,
+				18CD65B2242BBF63006D625D /* ViewController.swift */,
+				18CD65B4242BBF63006D625D /* Main.storyboard */,
+				18CD65BA242BBF67006D625D /* Assets.xcassets */,
+				18CD65BC242BBF67006D625D /* LaunchScreen.storyboard */,
+				18CD65BF242BBF67006D625D /* Info.plist */,
+				18CD65B7242BBF64006D625D /* Kait.xcdatamodeld */,
+			);
+			path = Kait;
+			sourceTree = "<group>";
+		};
+		18CD65C7242BBF68006D625D /* KaitTests */ = {
+			isa = PBXGroup;
+			children = (
+				18CD65C8242BBF68006D625D /* KaitTests.swift */,
+				18CD65CA242BBF68006D625D /* Info.plist */,
+			);
+			path = KaitTests;
+			sourceTree = "<group>";
+		};
+		18CD65D2242BBF68006D625D /* KaitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18CD65D3242BBF68006D625D /* KaitUITests.swift */,
+				18CD65D5242BBF68006D625D /* Info.plist */,
+			);
+			path = KaitUITests;
+			sourceTree = "<group>";
+		};
+		18CD65E1242BC05A006D625D /* FriendListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18CD65E2242BC091006D625D /* FriendListViewController.swift */,
+				18CD65EE242BD512006D625D /* FriendListTableViewCell.swift */,
+				18CD65EF242BD512006D625D /* FriendListTableViewCell.xib */,
+			);
+			path = FriendListViewController;
+			sourceTree = "<group>";
+		};
+		18CD65E4242BC1A1006D625D /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18CD65E5242BC1BE006D625D /* LoginViewController.swift */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		18CD65E7242BC269006D625D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				186550C924FE207300F58AA5 /* TabbarController */,
+				18119CEE24FCC605001F5511 /* LaunchViewController */,
+				18C70D84242D1909002A2A4B /* ChatViewController */,
+				18CD65E4242BC1A1006D625D /* LoginViewController */,
+				18CD65E1242BC05A006D625D /* FriendListViewController */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		18CD65E8242BC27E006D625D /* ViewModal */ = {
+			isa = PBXGroup;
+			children = (
+				18D67CBA243E3FD300545B98 /* LoginViewModal.swift */,
+				18CFF78D2444CE870074B579 /* FriendListViewModal.swift */,
+				187FB6E92452F46900421479 /* ChatViewModal.swift */,
+			);
+			path = ViewModal;
+			sourceTree = "<group>";
+		};
+		18CD65E9242BC298006D625D /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				187EA84424ED472F005A9277 /* WebChatUsers.swift */,
+				18D67CC0243E4AB100545B98 /* JSONUtilities.swift */,
+				18A8EADC244A174100E01B2C /* FriendList.swift */,
+				187FB6EB2453265500421479 /* ChatHistory.swift */,
+				18D67CBE243E4AA700545B98 /* User.swift */,
+				18024570249B42E200E2CAC5 /* SocketChatModal.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		18CD65EA242BC2AD006D625D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				180C1A5C243506260062E777 /* Constants.swift */,
+				180C1A5D243506260062E777 /* Helpers.swift */,
+				18CD65EB242BC62A006D625D /* Extension */,
+				18D67CC2243E4AE600545B98 /* AppManager.swift */,
+				18119CF124FCCADA001F5511 /* RoundedImageView.swift */,
+				18119CF924FD575F001F5511 /* CustomeView.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		18CD65EB242BC62A006D625D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				18CD65EC242BC65D006D625D /* ControllerExtension.swift */,
+				180C1A6024350DD00062E777 /* StringExtension.swift */,
+				18D67CBC243E44E000545B98 /* ViewExtension.swift */,
+				1863EE212456E4190025A359 /* DateExtension.swift */,
+				186C01FF24FCC302009CF699 /* UIColor+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		854873A5AFB066F8334C845C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F30E1479804CF25E47335EF /* Pods-Kait.debug.xcconfig */,
+				166B8088B7CC49B51F47ECF0 /* Pods-Kait.release.xcconfig */,
+				5149A8068079D9B97651EA27 /* Pods-KaitTests.debug.xcconfig */,
+				C1F4E9A8569AD7612B91887F /* Pods-KaitTests.release.xcconfig */,
+				C8DE3037C0CA1DB6E0E0675A /* Pods-KaitUITests.debug.xcconfig */,
+				51B3C715C09720C060EC0ACA /* Pods-KaitUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8A5FB2970F48E3D78044773B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F57421F7C2FB59032B951F59 /* Pods_Kait.framework */,
+				87A072F4FF96FC39E2D4A63D /* Pods_KaitTests.framework */,
+				4A4EE9B8A3E83F5CA6724E8D /* Pods_KaitUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18CD65AA242BBF63006D625D /* Kait */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18CD65D8242BBF68006D625D /* Build configuration list for PBXNativeTarget "Kait" */;
+			buildPhases = (
+				C52692EF9C2E5920FA77DBC7 /* [CP] Check Pods Manifest.lock */,
+				18CD65A7242BBF63006D625D /* Sources */,
+				18CD65A8242BBF63006D625D /* Frameworks */,
+				18CD65A9242BBF63006D625D /* Resources */,
+				45AC267954876C4FFEF51707 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kait;
+			productName = Kait;
+			productReference = 18CD65AB242BBF63006D625D /* KAIT.AI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18CD65C3242BBF68006D625D /* KaitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18CD65DB242BBF68006D625D /* Build configuration list for PBXNativeTarget "KaitTests" */;
+			buildPhases = (
+				C765D60D8067AE25E5345FF2 /* [CP] Check Pods Manifest.lock */,
+				18CD65C0242BBF68006D625D /* Sources */,
+				18CD65C1242BBF68006D625D /* Frameworks */,
+				18CD65C2242BBF68006D625D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18CD65C6242BBF68006D625D /* PBXTargetDependency */,
+			);
+			name = KaitTests;
+			productName = KaitTests;
+			productReference = 18CD65C4242BBF68006D625D /* KaitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18CD65CE242BBF68006D625D /* KaitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18CD65DE242BBF68006D625D /* Build configuration list for PBXNativeTarget "KaitUITests" */;
+			buildPhases = (
+				ACA145E3373D020187F9E852 /* [CP] Check Pods Manifest.lock */,
+				18CD65CB242BBF68006D625D /* Sources */,
+				18CD65CC242BBF68006D625D /* Frameworks */,
+				18CD65CD242BBF68006D625D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18CD65D1242BBF68006D625D /* PBXTargetDependency */,
+			);
+			name = KaitUITests;
+			productName = KaitUITests;
+			productReference = 18CD65CF242BBF68006D625D /* KaitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18CD65A3242BBF63006D625D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = Sagar;
+				TargetAttributes = {
+					18CD65AA242BBF63006D625D = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					18CD65C3242BBF68006D625D = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 18CD65AA242BBF63006D625D;
+					};
+					18CD65CE242BBF68006D625D = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 18CD65AA242BBF63006D625D;
+					};
+				};
+			};
+			buildConfigurationList = 18CD65A6242BBF63006D625D /* Build configuration list for PBXProject "Kait" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18CD65A2242BBF63006D625D;
+			productRefGroup = 18CD65AC242BBF63006D625D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18CD65AA242BBF63006D625D /* Kait */,
+				18CD65C3242BBF68006D625D /* KaitTests */,
+				18CD65CE242BBF68006D625D /* KaitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18CD65A9242BBF63006D625D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18119CF824FD477E001F5511 /* kaitintro.mp4 in Resources */,
+				18C70D8A242D1BC7002A2A4B /* SenderTableViewCell.xib in Resources */,
+				18B0747F2501FE390054A5E9 /* kaitintro.mov in Resources */,
+				18CD65BE242BBF67006D625D /* LaunchScreen.storyboard in Resources */,
+				18CD65BB242BBF67006D625D /* Assets.xcassets in Resources */,
+				18CD65B6242BBF63006D625D /* Main.storyboard in Resources */,
+				18C70D8E242D1BDD002A2A4B /* ReciverTableViewCell.xib in Resources */,
+				18CD65F1242BD512006D625D /* FriendListTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CD65C2242BBF68006D625D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CD65CD242BBF68006D625D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45AC267954876C4FFEF51707 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kait/Pods-Kait-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kait/Pods-Kait-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kait/Pods-Kait-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACA145E3373D020187F9E852 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KaitUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C52692EF9C2E5920FA77DBC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kait-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C765D60D8067AE25E5345FF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KaitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18CD65A7242BBF63006D625D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18119CF224FCCADA001F5511 /* RoundedImageView.swift in Sources */,
+				18D67CC3243E4AE600545B98 /* AppManager.swift in Sources */,
+				18D67CBD243E44E000545B98 /* ViewExtension.swift in Sources */,
+				18CE325D2434FD360001DD23 /* API.swift in Sources */,
+				187FB6EA2452F46900421479 /* ChatViewModal.swift in Sources */,
+				18119CFA24FD575F001F5511 /* CustomeView.swift in Sources */,
+				18CD65E6242BC1BE006D625D /* LoginViewController.swift in Sources */,
+				18CD65E3242BC091006D625D /* FriendListViewController.swift in Sources */,
+				18C70D86242D1BA0002A2A4B /* ChatViewController.swift in Sources */,
+				180C1A6124350DD00062E777 /* StringExtension.swift in Sources */,
+				187EA84524ED472F005A9277 /* WebChatUsers.swift in Sources */,
+				186C020024FCC302009CF699 /* UIColor+Extension.swift in Sources */,
+				18C70D89242D1BC7002A2A4B /* SenderTableViewCell.swift in Sources */,
+				18C70D8D242D1BDD002A2A4B /* ReciverTableViewCell.swift in Sources */,
+				18CD65B3242BBF63006D625D /* ViewController.swift in Sources */,
+				18CD65AF242BBF63006D625D /* AppDelegate.swift in Sources */,
+				18CE325E2434FD360001DD23 /* APIController.swift in Sources */,
+				18CD65B9242BBF64006D625D /* Kait.xcdatamodeld in Sources */,
+				18D67CC1243E4AB100545B98 /* JSONUtilities.swift in Sources */,
+				18CD65ED242BC65D006D625D /* ControllerExtension.swift in Sources */,
+				187FB6EC2453265500421479 /* ChatHistory.swift in Sources */,
+				180C1A5E243506260062E777 /* Constants.swift in Sources */,
+				18CD65F0242BD512006D625D /* FriendListTableViewCell.swift in Sources */,
+				180C1A5F243506260062E777 /* Helpers.swift in Sources */,
+				18CFF78E2444CE870074B579 /* FriendListViewModal.swift in Sources */,
+				18119CF024FCC63F001F5511 /* IntroViewController.swift in Sources */,
+				186550CB24FE209D00F58AA5 /* TabBarViewController.swift in Sources */,
+				18D67CBB243E3FD300545B98 /* LoginViewModal.swift in Sources */,
+				18024571249B42E200E2CAC5 /* SocketChatModal.swift in Sources */,
+				1863EE222456E4190025A359 /* DateExtension.swift in Sources */,
+				18CE325F2434FD360001DD23 /* APIError.swift in Sources */,
+				18A8EADD244A174200E01B2C /* FriendList.swift in Sources */,
+				18D67CBF243E4AA700545B98 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CD65C0242BBF68006D625D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CD65C9242BBF68006D625D /* KaitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CD65CB242BBF68006D625D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CD65D4242BBF68006D625D /* KaitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18CD65C6242BBF68006D625D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18CD65AA242BBF63006D625D /* Kait */;
+			targetProxy = 18CD65C5242BBF68006D625D /* PBXContainerItemProxy */;
+		};
+		18CD65D1242BBF68006D625D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18CD65AA242BBF63006D625D /* Kait */;
+			targetProxy = 18CD65D0242BBF68006D625D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18CD65B4242BBF63006D625D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18CD65B5242BBF63006D625D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18CD65BC242BBF67006D625D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18CD65BD242BBF67006D625D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18CD65D6242BBF68006D625D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18CD65D7242BBF68006D625D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18CD65D9242BBF68006D625D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F30E1479804CF25E47335EF /* Pods-Kait.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kait/KAIT.AI.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = U5DD5Z44M4;
+				INFOPLIST_FILE = Kait/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.KaitAi;
+				PRODUCT_NAME = KAIT.AI;
+				PROVISIONING_PROFILE_SPECIFIER = KaitDevProfile;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		18CD65DA242BBF68006D625D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 166B8088B7CC49B51F47ECF0 /* Pods-Kait.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kait/KAIT.AI.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = U5DD5Z44M4;
+				INFOPLIST_FILE = Kait/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.KaitAi;
+				PRODUCT_NAME = KAIT.AI;
+				PROVISIONING_PROFILE_SPECIFIER = KaitDevProfile;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		18CD65DC242BBF68006D625D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5149A8068079D9B97651EA27 /* Pods-KaitTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DMUME3PD8U;
+				INFOPLIST_FILE = KaitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.KaitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kait.app/Kait";
+			};
+			name = Debug;
+		};
+		18CD65DD242BBF68006D625D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1F4E9A8569AD7612B91887F /* Pods-KaitTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DMUME3PD8U;
+				INFOPLIST_FILE = KaitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.KaitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kait.app/Kait";
+			};
+			name = Release;
+		};
+		18CD65DF242BBF68006D625D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8DE3037C0CA1DB6E0E0675A /* Pods-KaitUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DMUME3PD8U;
+				INFOPLIST_FILE = KaitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.KaitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kait;
+			};
+			name = Debug;
+		};
+		18CD65E0242BBF68006D625D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51B3C715C09720C060EC0ACA /* Pods-KaitUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DMUME3PD8U;
+				INFOPLIST_FILE = KaitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.KaitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kait;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18CD65A6242BBF63006D625D /* Build configuration list for PBXProject "Kait" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18CD65D6242BBF68006D625D /* Debug */,
+				18CD65D7242BBF68006D625D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18CD65D8242BBF68006D625D /* Build configuration list for PBXNativeTarget "Kait" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18CD65D9242BBF68006D625D /* Debug */,
+				18CD65DA242BBF68006D625D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18CD65DB242BBF68006D625D /* Build configuration list for PBXNativeTarget "KaitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18CD65DC242BBF68006D625D /* Debug */,
+				18CD65DD242BBF68006D625D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18CD65DE242BBF68006D625D /* Build configuration list for PBXNativeTarget "KaitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18CD65DF242BBF68006D625D /* Debug */,
+				18CD65E0242BBF68006D625D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		18CD65B7242BBF64006D625D /* Kait.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				18CD65B8242BBF64006D625D /* Kait.xcdatamodel */,
+			);
+			currentVersion = 18CD65B8242BBF64006D625D /* Kait.xcdatamodel */;
+			path = Kait.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 18CD65A3242BBF63006D625D /* Project object */;
+}

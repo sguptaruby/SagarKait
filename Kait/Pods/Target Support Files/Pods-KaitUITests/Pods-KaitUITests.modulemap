@@ -1,0 +1,6 @@
+framework module Pods_KaitUITests {
+  umbrella header "Pods-KaitUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
